@@ -9,17 +9,13 @@
 			margin: 0;
 			padding: 0;
 		}
-		#body{
-			width: 100%;
-			height: 100%;
-		}
 		#content {
 			font-size: 35px;
 			text-align: center;
 		}
-		#info {
-			font-size: 16px;
-			text-align: center
+		#content2 {
+			font-size: 15px;
+			text-align: center;
 		}
 		#data {
 			font-size: 35px;
@@ -32,11 +28,11 @@
 			color: red;
 		}
 		#photo{
-			width: 130px;
-			height: 148px;
+			width: 150px;
+			height: 150px;
 			align-content: center;
 		}
-		#photoright{
+		#photo2{
 			width: 100px;
 			height: 100px;
 			align-content: center;
@@ -57,11 +53,11 @@
 	function showDate()
 	{
 		var today=new Date();
+
 		var hour=today.getHours();
 		var min=today.getMinutes();
 		var sec=today.getSeconds();
 		var ms=today.getMilliseconds();
-		
 		if(sec.toString().length == 1){
 			sec = "0" + sec
 		}
@@ -75,6 +71,7 @@
 
 </head>
 <body>
+<<<<<<< HEAD
 	<div id="body">
 		<p id="content">进校</p>
 		<div align="center">
@@ -93,13 +90,27 @@
 		<div align="center">
 			<img id="photoright" src="./1.jpg" >
 		</div>
+=======
+	<div id="content">
+	<p id="content">进校</p>
+>>>>>>> 93a9c1b2f3b2309e84ce2da467d6edec87dbb4aa
 	</div>
+	<div align="center">
+		<p id="content2">毛炳新-201831080115</p>
+	<hr/>
+	<br/>
+	</div>
+	<div id="content">
+	<p id="content">白名单验证通过</p>
+	<font id="time">18:44:58.136</font>
 	<script type="text/javascript">
 		setInterval(showDate,50);
 	</script>
+	</div>
+	<div align="center">
+		<img id="photo2" src="./1.jpg" >
+	</div>
 
 </body>
 
 
-
-</html>
